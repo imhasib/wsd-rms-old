@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/rms
+    username: postgres
+    password: 1234
+    hikari:
+      poolName: Hikari
+      auto-commit: false
