@@ -2,13 +2,14 @@ package com.hsb.rms.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
-import java.io.Serializable;
+import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+import java.io.Serializable;
+
 @Entity
-@Table(name = "sale")
+@Table(name = "t_sale")
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @SuppressWarnings("common-java:DuplicatedBlocks")
 public class Sale extends AbstractAuditingEntity implements Serializable {

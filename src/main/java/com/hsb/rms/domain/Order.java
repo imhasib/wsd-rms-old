@@ -2,13 +2,14 @@ package com.hsb.rms.domain;
 
 import com.hsb.rms.domain.enumeration.PayType;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
-import java.io.Serializable;
+import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+import java.io.Serializable;
+
 @Entity
-@Table(name = "order")
+@Table(name = "t_order")
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Order extends AbstractAuditingEntity implements Serializable {
 

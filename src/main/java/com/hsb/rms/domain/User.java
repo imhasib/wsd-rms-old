@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.util.Locale;
 
 @Entity
-@Table(name = "user")
+@Table(name = "t_user")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class User extends AbstractAuditingEntity implements Serializable {
 
